@@ -8,8 +8,18 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="container text-center mt-5 p-4 rounded shadow bg-light">
-        <h1 class="mb-4 text-primary">Selector de Color RGB</h1>
+    <div class="container text-center rounded shadow bg-light">
+
+        <nav class="navbar mb-3 navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Aplicación de Pruebas de Color</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+
+        <h1 class="mb-5 text-primary">Selector de Color RGB</h1>
         <div class="color-box mb-3 rounded shadow" id="colorBox"></div>
         <p id="hexCode" class="fw-bold text-secondary"></p>
         
@@ -36,7 +46,9 @@
             <input type="number" id="blueValue" min="0" max="255" value="0" class="form-control">
         </div>
     </div>
-    
+    <footer class="bg-dark text-white text-center py-3 position-fixed bottom-0 w-100">
+        <p class="mb-0">&copy; 2025 Todos los derechos reservados | Desarrollado por Uriel Durán Peralta</p>
+    </footer>
     <script src="./js/main.js"></script>
 </body>
 </html>
